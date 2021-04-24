@@ -63,9 +63,7 @@ class RegisterForm extends Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <h2>Join Would You Rather !!</h2>
-        <p className="text-muted lead mt-3">
-          Just fill your details &amp; let us help you in creating polls easily! Don't forget to help your friends too.
-        </p>
+       
         <Alert status={status} type={type} message={message} />
         <div className="mb-4">
           <label htmlFor="name" className="form-label text-secondary">Full Name</label>

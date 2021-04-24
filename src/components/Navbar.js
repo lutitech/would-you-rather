@@ -4,7 +4,7 @@ import LoggedOut from './LoggedOut'
 
 function Navbar(props) {
   return (
-    <nav className="navbar navbar-expand navbar-dark bg-dark">
+    <nav className="navbar navbar-expand navbar-dark bg-primary">
       <div className="container">
         <span className="navbar-brand brand-font">Would You Rather</span>
         <div className="collapse navbar-collapse">

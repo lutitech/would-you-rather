@@ -3,7 +3,7 @@ import React from 'react'
 function UserProfile(props) {
   const {avatarURL, name, questions, answers} = props;
   return (
-    <div className="col-md-3 border-right">
+    <div className="col-md-3 border-right ">
       <div className="profile-wrapper d-flex align-items-center">
         <img src={avatarURL} height="64" className="rounded shadow-sm" alt="User Profile"/>
         <div className="profile-info ml-3">

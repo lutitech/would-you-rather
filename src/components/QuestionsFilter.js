@@ -5,7 +5,7 @@ import QuestionCard from './QuestionCard';
 function QuestionsFilter(props) {
   const {answered, unanswered} = props;
   return (
-    <div className="col-md-8 pl-5">
+    <div className="col-md-8 pl-5 border-right">
       <div className="d-flex justify-content-end">
         <ul className="nav nav-pills mb-4 pb-2" id="pills-tab" role="tablist">
           <li className="nav-item" role="presentation">
@@ -22,7 +22,7 @@ function QuestionsFilter(props) {
       </div>
       <div className="tab-content w-100" id="pills-tabContent">
         <div className="tab-pane w-100 fade show active" id="pills-unanswered" role="tabpanel">
-          {unanswered.length === 0 && <p className="text-center">Yeah! You answered all of them! Create <Link to="/add">new poll</Link> ?</p>}
+          {unanswered.length === 0 && <p className="text-center">You answered all of them. Create Poll <Link to="/add">new poll</Link> ?</p>}
           {unanswered.map(q => (
             <QuestionCard key={q} questionId={q} type="unanswered" />
             ))}

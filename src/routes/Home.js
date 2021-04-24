@@ -21,7 +21,7 @@ class Home extends Component {
     const unanswered = questionIds.filter(q => !answered.includes(q))
     return (
       <section className="py-5">
-        <div className="container mt-3">
+        <div className="container mt-3 ">
           <div className="row">
             <UserProfile 
               id={authedUserDetails.id} 

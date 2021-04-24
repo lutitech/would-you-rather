@@ -37,10 +37,8 @@ class Login extends Component {
             </div>
             <div className="col-md-6 mt-4">
               <form onSubmit={this.handleSubmit}>
-                <h2>Would You Rather !!</h2>
-                <p className="text-muted lead mt-3">
-                  Not sure with your choices? Lets help you out in easily creating polls &amp; don't forget to invite your friends over!
-                </p>
+                <h2>Would You Rather Poll !!</h2>
+                
                 <div className="mb-4 mt-5">
                   <label htmlFor="username" className="form-label">Username</label>
                   <input 
@@ -61,7 +59,7 @@ class Login extends Component {
                 <button type="submit" className="btn btn-dark px-4 my-2">Login</button>
               </form>
               <div className="mt-5">
-                <span>Haven't joined us yet?</span> <Link to="/register" className="link text-decoration-none">Register now</Link> <span>its free :)</span>
+                 <Link to="/register" className="link text-decoration-none">Register now</Link> 
               </div>
             </div>
           </div>
